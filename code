@@ -1,0 +1,23 @@
+#Madlib project 1
+#Game of Thrones movie characters
+#(dictionary, lists, input, formatted strings)
+game = """How well do you know your Game of Thrones (GOT) Characters?."""
+got_characters = {
+    "Arya": ["hell bent on revenging her family's death", "be faceless"],
+    "Sansa": ["naive", "always wanted to be queen"],
+    "Cersei": ["a twin", "be a power hungry queen"],
+    "Jon": ["a bastard", "be the king in the north"],
+    "Joffrey": ["heartless", "be betrothed to Sansa Stark"],
+    "Daenerys": ["a blonde","be the mother of dragons"],
+    "Tyrion": ["wise", "be kind hearted"],
+    "Jaime" : ["a skilled swords-man", "be the king slayer"],
+    "Bran" : ["lame", "be the three eyed raven"],
+    "Robert" : ["a fat king", ""],
+    "Baelish" : ["lord", "own a brothel"]
+}
+print(game)
+name = input("Write one Game of Thrones character: ").capitalize()
+word1 = got_characters[name][0]
+word2 = got_characters[name][1]
+character_description = f"{name} in the Game of Thrones was {word1} and was known to {word2}"
+print(character_description)
